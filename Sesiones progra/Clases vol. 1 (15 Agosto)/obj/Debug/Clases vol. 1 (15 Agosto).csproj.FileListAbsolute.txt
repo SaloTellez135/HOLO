@@ -1,0 +1,7 @@
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Clases vol. 1 (15 Agosto)\bin\Debug\Clases vol. 1 (15 Agosto).exe.config
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Clases vol. 1 (15 Agosto)\bin\Debug\Clases vol. 1 (15 Agosto).exe
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Clases vol. 1 (15 Agosto)\bin\Debug\Clases vol. 1 (15 Agosto).pdb
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Clases vol. 1 (15 Agosto)\obj\Debug\Clases vol. 1 (15 Agosto).csproj.AssemblyReference.cache
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Clases vol. 1 (15 Agosto)\obj\Debug\Clases vol. 1 (15 Agosto).csproj.CoreCompileInputs.cache
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Clases vol. 1 (15 Agosto)\obj\Debug\Clases vol. 1 (15 Agosto).exe
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Clases vol. 1 (15 Agosto)\obj\Debug\Clases vol. 1 (15 Agosto).pdb
