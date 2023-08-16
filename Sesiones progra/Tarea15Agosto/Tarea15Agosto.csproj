@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{20229E4B-E44F-41C4-B8C3-8E572544638A}</ProjectGuid>
+    <ProjectGuid>{0FFDCF8D-EA87-45C5-96FD-50944E1AE02D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Clases_vol._1__15_Agosto_</RootNamespace>
-    <AssemblyName>Clases vol. 1 %2815 Agosto%29</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>Tarea15Agosto</RootNamespace>
+    <AssemblyName>Tarea15Agosto</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,8 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Color.cs" />
-    <Compile Include="DispositivoMovil.cs" />
+    <Compile Include="Artista.cs" />
+    <Compile Include="Cancion.cs" />
+    <Compile Include="Album.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

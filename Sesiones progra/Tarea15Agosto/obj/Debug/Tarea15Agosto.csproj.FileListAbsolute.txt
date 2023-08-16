@@ -1,0 +1,2 @@
+C:\Users\Salomón\Documents\Escuela\progranacion\HOLO\Sesiones progra\Tarea15Agosto\obj\Debug\Tarea15Agosto.csproj.AssemblyReference.cache
+C:\Users\Salomón\Documents\Escuela\progranacion\HOLO\Sesiones progra\Tarea15Agosto\obj\Debug\Tarea15Agosto.csproj.CoreCompileInputs.cache
