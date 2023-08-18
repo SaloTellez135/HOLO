@@ -1,0 +1,7 @@
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CarreraDeCoches\bin\Debug\CarreraDeCoches.exe.config
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CarreraDeCoches\bin\Debug\CarreraDeCoches.exe
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CarreraDeCoches\bin\Debug\CarreraDeCoches.pdb
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CarreraDeCoches\obj\Debug\CarreraDeCoches.csproj.AssemblyReference.cache
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CarreraDeCoches\obj\Debug\CarreraDeCoches.csproj.CoreCompileInputs.cache
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CarreraDeCoches\obj\Debug\CarreraDeCoches.exe
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CarreraDeCoches\obj\Debug\CarreraDeCoches.pdb
