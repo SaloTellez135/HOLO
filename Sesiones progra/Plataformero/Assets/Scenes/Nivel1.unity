@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 212464104}
   - component: {fileID: 212464107}
   - component: {fileID: 212464108}
+  - component: {fileID: 212464109}
   m_Layer: 0
   m_Name: Caver Nicolas
   m_TagString: Untagged
@@ -251,7 +252,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &212464108
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -268,6 +269,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0066479146, y: -0.3290742}
   m_Size: {x: 0.9246008, y: 1.7423004}
   m_Direction: 0
+--- !u!114 &212464109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212464103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b1ad3454091385439c6950e6402ec87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &819772801
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,8 +385,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819772801}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -2.92, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.7585, y: -2.92, z: 0}
+  m_LocalScale: {x: 2.8742, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
