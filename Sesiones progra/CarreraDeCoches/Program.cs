@@ -22,11 +22,23 @@ namespace CarreraDeCoches
             Monaco.nombre = "Monaco";
             Monaco.longitud = 3.33f;
 
+            ferrari.PonerGasolina(10f);
+            Mclaren.PonerGasolina(10f);
+
+            ferrari.Arrancar();
+            Mclaren.Arrancar();
+
+            ferrari.Acelerar(40);
+            Mclaren.Acelerar(40);
+
+
+
             Monaco.Competir(Mclaren, ferrari);
             //Linea para aguardar enter para continuar
             Console.ReadLine();
 
-           
+            ferrari.Frenar();
+            Mclaren.Frenar();
 
 
         }
