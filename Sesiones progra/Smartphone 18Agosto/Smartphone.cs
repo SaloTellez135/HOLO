@@ -36,7 +36,7 @@ namespace Smartphone_18Agosto
         public char Speakers;
         public string SpeakType;
         public char HeadJack;
-        public string WLAN;
+        public bool WLAN;
         public float Bluetooth;
         public string Possition;
         public char NFC;

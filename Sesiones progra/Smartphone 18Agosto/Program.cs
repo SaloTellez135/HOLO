@@ -36,7 +36,23 @@ namespace Smartphone_18Agosto
             Iphone7Plus.MainVideofps = 30;
             Iphone7Plus.SelfCamRes = 7;
             Iphone7Plus.SelfCamfps = 30;
-            Iphone7Plus.Speakers = 
+            Iphone7Plus.Speakers = 'Y';
+            Iphone7Plus.SpeakType = "Stereo";
+            Iphone7Plus.HeadJack = 'y';
+            Iphone7Plus.WLAN = true;
+            Iphone7Plus.Bluetooth = 5.2f;
+            Iphone7Plus.Possition = "GPS";
+            Iphone7Plus.NFC = 'y';
+            Iphone7Plus.Radio = 'n';
+            Iphone7Plus.USBver =3.1f;
+            Iphone7Plus.USBInterface = "Lightning";
+            Iphone7Plus.SelfCamfps = 30;
+            Iphone7Plus.BatType = "Li ion";
+            Iphone7Plus.BatCapacity = 3200;
+            Iphone7Plus.Batduration = 310;
+            Iphone7Plus.Color = "Jet black";
+            Iphone7Plus.Model = "B123";
+            Iphone7Plus.Price = 329;
                 
 
         }
