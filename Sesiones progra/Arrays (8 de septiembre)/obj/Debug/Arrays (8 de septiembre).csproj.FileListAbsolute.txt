@@ -1,0 +1,7 @@
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Arrays (8 de septiembre)\bin\Debug\Arrays (8 de septiembre).exe.config
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Arrays (8 de septiembre)\bin\Debug\Arrays (8 de septiembre).exe
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Arrays (8 de septiembre)\bin\Debug\Arrays (8 de septiembre).pdb
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Arrays (8 de septiembre)\obj\Debug\Arrays (8 de septiembre).csproj.AssemblyReference.cache
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Arrays (8 de septiembre)\obj\Debug\Arrays (8 de septiembre).csproj.CoreCompileInputs.cache
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Arrays (8 de septiembre)\obj\Debug\Arrays (8 de septiembre).exe
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Arrays (8 de septiembre)\obj\Debug\Arrays (8 de septiembre).pdb

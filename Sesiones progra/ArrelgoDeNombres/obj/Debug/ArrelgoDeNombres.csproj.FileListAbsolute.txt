@@ -1,0 +1,2 @@
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\ArrelgoDeNombres\obj\Debug\ArrelgoDeNombres.csproj.AssemblyReference.cache
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\ArrelgoDeNombres\obj\Debug\ArrelgoDeNombres.csproj.CoreCompileInputs.cache
