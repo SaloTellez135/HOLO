@@ -1,0 +1,7 @@
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CuentaBancaria\bin\Debug\CuentaBancaria.exe.config
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CuentaBancaria\bin\Debug\CuentaBancaria.exe
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CuentaBancaria\bin\Debug\CuentaBancaria.pdb
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CuentaBancaria\obj\Debug\CuentaBancaria.csproj.AssemblyReference.cache
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CuentaBancaria\obj\Debug\CuentaBancaria.csproj.CoreCompileInputs.cache
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CuentaBancaria\obj\Debug\CuentaBancaria.exe
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\CuentaBancaria\obj\Debug\CuentaBancaria.pdb
