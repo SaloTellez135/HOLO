@@ -10,37 +10,37 @@ namespace ArrelgoDeNombres
     {
 
 
-        public string[] prefijo = { "Chomp", "Bite", "Titan", "Mega" };
-        public string[] subfijo = { "Plodicus", "Donnicus", "Zilla", "Saur" };
+        public string[] prefijos = { "Chomp", "Bite", "Titan", "Mega","Dilla","Stego","Gigga","Mela","Strepto",};
+        public string[] subfijos = { "Plodicus", "Donnicus", "Zilla", "Saur","Wigga","Yaurus", "Meaurus"};
 
-        public void Generar(int PrimerNombre, int SegundoNombre)
+        public void generar(int primerNombre, int segundoNombre)
         {
             Console.WriteLine("Lista de prefijos para tu nombre de dinosaurio");
             Console.WriteLine();
 
-                for(int i=0; i<prefijo.Length ;i++)
+                for(int i=0; i<prefijos.Length ;i++)
                 {
-                    Console.WriteLine(i + 1 + "-" + prefijo[i]);
+                    Console.WriteLine(i + 1 + "-" + prefijos[i]);
                 }
 
             Console.WriteLine();
             Console.WriteLine("Lista de subfijos para tu nombre de dinosaurio");
             Console.WriteLine();
 
-                for (int i = 0; i < subfijo.Length; i++)
+                for (int i = 0; i < subfijos.Length; i++)
                 {
-                    Console.WriteLine(i + 1 + "-" + subfijo[i]);
+                    Console.WriteLine(i + 1 + "-" + subfijos[i]);
                 }
 
             Console.WriteLine();
             Console.WriteLine("Escoge tu prefijo");
             Console.WriteLine();
-            PrimerNombre = int.Parse(Console.ReadLine());
+            primerNombre = int.Parse(Console.ReadLine());
             Console.WriteLine("Escoge tu subfijo");
             Console.WriteLine();
-            SegundoNombre = int.Parse(Console.ReadLine());
+            segundoNombre = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Tu nombre de dinosaurio es " + prefijo[PrimerNombre-1] + subfijo[SegundoNombre-1]);
+            Console.WriteLine("Tu nombre de dinosaurio es " + prefijos[primerNombre-1] + subfijos[segundoNombre-1]);
             Console.Read();
         }
         
