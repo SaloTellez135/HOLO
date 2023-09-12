@@ -10,6 +10,8 @@ namespace ArrelgoDeNombres
     {
         static void Main(string[] args)
         {
+            GeneradorNombre generador = new GeneradorNombre();
+            generador.Generar(0,0);
         }
     }
 }
