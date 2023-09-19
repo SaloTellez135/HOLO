@@ -7,6 +7,7 @@ public class ControlJugador : MonoBehaviour
     public float velocidadCaminar = 5;
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
+    public float jumpForce = 20;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,8 @@ public class ControlJugador : MonoBehaviour
         float velVert = miCuerpo.velocity.y;
 
         float movHoriz = Input.GetAxis("Horizontal");
+
+        bool movVert = Input.GetButtonDown("Jump");
 
         if (movHoriz > 0)
         {//se mueve a la derechaç
@@ -38,5 +41,13 @@ public class ControlJugador : MonoBehaviour
             miCuerpo.velocity = new Vector3(0, velVert, 0);
             miAnimador.SetBool("Caminando", false);
         }
+
+        if (movVert)
+        {//se mueve hacia arriba
+            miCuerpo.AddForce(new Vector2(0,jumpForce), ForceMode2D.Impulse);
+
+        }
+
+        miAnimador.SetFloat("VelocidadVertical", velVert);
     }
 }
