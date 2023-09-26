@@ -1,0 +1,7 @@
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Constructor\bin\Debug\Constructor.exe.config
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Constructor\bin\Debug\Constructor.exe
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Constructor\bin\Debug\Constructor.pdb
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Constructor\obj\Debug\Constructor.csproj.AssemblyReference.cache
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Constructor\obj\Debug\Constructor.csproj.CoreCompileInputs.cache
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Constructor\obj\Debug\Constructor.exe
+C:\Users\andres.tellezsa\Documents\GitHub\HOLO\Sesiones progra\Constructor\obj\Debug\Constructor.pdb
