@@ -8,7 +8,7 @@ public class ControlJugador : MonoBehaviour
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
     public float jumpForce = 20;
-    public bool enPiso = false;
+    public bool enPiso = true;
     int numJumps;
     // Start is called before the first frame update
     void Start()
