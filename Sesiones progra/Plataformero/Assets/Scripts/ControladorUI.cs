@@ -9,6 +9,13 @@ public class ControladorUI : MonoBehaviour
     public Personaje Heroe;
     public Text EtiquetaHPHeroe;
     public Image BarraHPHeroe;
+
+    public Personaje Villano;
+    public Text EtiquetaHPVillano;
+    public Image BarraHPVillano;
+
+    public Text scoreHeroe;
+    public Text vidasHeroe;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +25,31 @@ public class ControladorUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //heroe
+
         EtiquetaHPHeroe.text = Heroe.hp + "/" + Heroe.hpMax;
 
         float porcentajeHPHeroe = Heroe.hp / (float)Heroe.hpMax;
 
         BarraHPHeroe.fillAmount = porcentajeHPHeroe;
+
+        //villano
+
+        EtiquetaHPVillano.text = Villano.hp + "/" + Villano.hpMax;
+
+        float porcentajeHPVillano = Villano.hp / (float)Villano.hpMax;
+
+        BarraHPVillano.fillAmount = porcentajeHPVillano;
+
+        //score 
+
+        scoreHeroe.text = "Score = " + Heroe.score;
+
+        //num de vidas
+
+        vidasHeroe.text = "Vidas = " + Heroe.vidas;
+
+
 
     }
 }
