@@ -16,6 +16,7 @@ public class ControladorUI : MonoBehaviour
 
     public Text scoreHeroe;
     public Text vidasHeroe;
+    public Text vidasMaxHeroe;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +48,7 @@ public class ControladorUI : MonoBehaviour
 
         //num de vidas
 
-        vidasHeroe.text = "Vidas = " + Heroe.vidas;
+        vidasHeroe.text = "Vidas = " + Heroe.vidasMax + "/" + Heroe.vidas;
 
 
 
