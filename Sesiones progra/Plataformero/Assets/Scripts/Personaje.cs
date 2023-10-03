@@ -10,6 +10,7 @@ public class Personaje : MonoBehaviour
     public int score = 0;
     public int vidasMax = 3;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,17 @@ public class Personaje : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void hacerDanio(int puntDanio,GameObject villano)
+    {
+        hp = hp - puntDanio;
+        print(name + "recibe daño de " + puntDanio + "por " + villano);
+    }
+
+    public void instaMuerte(GameObject quien)
+    {
+        hp = 0;
+        print(name + " murio ahogado");
     }
 }
