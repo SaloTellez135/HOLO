@@ -179,3 +179,4 @@ MonoBehaviour:
   vidas: 3
   score: 0
   vidasMax: 3
+  splashBlood: {fileID: 4553287630450876385, guid: 15483e51212e3d74886ea57291f4639a, type: 3}

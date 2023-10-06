@@ -13,11 +13,14 @@ public class ZonaMuerta : MonoBehaviour
 
             Personaje mono = obj.GetComponent<Personaje>();
             mono.instaMuerte(this.gameObject);
+
+            GameObject efectoSlpash = Instantiate(splashAguaPrefab);
+
+            efectoSlpash.transform.position = mono.transform.position;
         }
 
-        GameObject efectoSpash = Instantiate(splashAguaPrefab);
+        
 
-        efectoSpash.transform.position = mono.transform.position;
     }
 
 

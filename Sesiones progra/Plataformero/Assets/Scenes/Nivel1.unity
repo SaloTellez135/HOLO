@@ -426,6 +426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap Huesos
       objectReference: {fileID: 0}
+    - target: {fileID: 5375916616131734995, guid: 618f852cdbc9b6c4b999e2fc2ed0fcdb, type: 3}
+      propertyPath: m_TagString
+      value: Danio
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 618f852cdbc9b6c4b999e2fc2ed0fcdb, type: 3}
 --- !u!1 &568121009
@@ -2365,6 +2369,8 @@ MonoBehaviour:
   vidas: 1
   score: 0
   vidasMax: 3
+  splashBlood: {fileID: 0}
+  corazao: {fileID: 0}
 --- !u!61 &1225744741
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7743,7 +7749,7 @@ GameObject:
   - component: {fileID: 1843221552}
   m_Layer: 0
   m_Name: Fondo
-  m_TagString: Untagged
+  m_TagString: Danio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15973,6 +15979,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7813701294571927639, guid: e49f59a2714be6a4da7b92003b2bc953, type: 3}
+      propertyPath: corazao
+      value: 
+      objectReference: {fileID: 6855314210357232287, guid: 7c2a9b83b809a0848915fabd9596b68b, type: 3}
     - target: {fileID: 7813701294571927646, guid: e49f59a2714be6a4da7b92003b2bc953, type: 3}
       propertyPath: m_Name
       value: Caver Nicolas (jugador)
