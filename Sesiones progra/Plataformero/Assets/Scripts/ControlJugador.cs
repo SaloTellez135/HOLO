@@ -10,6 +10,7 @@ public class ControlJugador : MonoBehaviour
     public float jumpForce = 20;
     public bool enPiso = true;
     int numJumps;
+    private EfectosSonoros misSonidos;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +59,7 @@ public class ControlJugador : MonoBehaviour
         {//se mueve hacia arriba
             
             miCuerpo.AddForce(new Vector2(0,jumpForce), ForceMode2D.Impulse);
+            misSonidos.reporducir("Saltar");
         }
 
         miAnimador.SetFloat("VelocidadVertical", velVert);

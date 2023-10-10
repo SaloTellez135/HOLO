@@ -11,11 +11,12 @@ public class Personaje : MonoBehaviour
     public int vidasMax = 3;
     public GameObject splashBlood;
     public GameObject corazao;
+    private Animator animador;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        animador = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,15 +27,23 @@ public class Personaje : MonoBehaviour
 
     public void hacerDanio(int puntDanio, GameObject villano)
     {
-        hp = hp - puntDanio;
-        print(name + "recibe daño de " + puntDanio + "por " + villano);
-        if (hp <= 0)
+        if (hp > 0)
         {
+            hp = hp - puntDanio;
+            print(name + "recibe daño de " + puntDanio + "por " + villano);
+            Personaje elPerso = this.GetComponent<Personaje>();
+            GameObject efectoSlpash = Instantiate(splashBlood);
+            efectoSlpash.transform.position = this.transform.position;
+            animador.SetTrigger("Daniar");
+        }
 
+        if (hp < 1)
+        {
             //Con esta instruccion se pbtiene el componente del Personaje Player
             Personaje elPerso = this.GetComponent<Personaje>();
-            GameObject efectoSlpash = Instantiate(corazao);
-            efectoSlpash.transform.position = this.transform.position;
+            GameObject splashCorazao = Instantiate(corazao);
+            splashCorazao.transform.position = this.transform.position;
+            animador.SetTrigger("Morir");
 
         }
     }
@@ -44,25 +53,6 @@ public class Personaje : MonoBehaviour
     {
         hp = 0;
         print(name + " murio ahogado");
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {//Este metodo se dispara cuando este objeto detecta una colision... cum
-
-
-
-        GameObject otroObjeto = collision.gameObject;
-        if (otroObjeto.tag == "Danio")
-        {
-            print(name + " se dio en la madre con " + collision.gameObject);
-
-            //Con esta instruccion se pbtiene el componente del Personaje Player
-            Personaje elPerso = this.GetComponent<Personaje>();
-            GameObject efectoSlpash = Instantiate(splashBlood);
-            efectoSlpash.transform.position = this.transform.position;
-
-        }
-        
     }
 
     
