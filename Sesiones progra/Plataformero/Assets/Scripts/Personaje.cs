@@ -53,6 +53,7 @@ public class Personaje : MonoBehaviour
     {
         hp = 0;
         print(name + " murio ahogado");
+        animador.SetTrigger("Morir");
     }
 
     

@@ -16,6 +16,7 @@ public class ControlJugador : MonoBehaviour
     {
         miCuerpo = GetComponent<Rigidbody2D>();
         miAnimador = GetComponent<Animator>();
+        misSonidos = GetComponent<EfectosSonoros>();
     }
 
     // Update is called once per frame
@@ -59,7 +60,7 @@ public class ControlJugador : MonoBehaviour
         {//se mueve hacia arriba
             
             miCuerpo.AddForce(new Vector2(0,jumpForce), ForceMode2D.Impulse);
-            misSonidos.reporducir("Saltar");
+            misSonidos.reporducir("Boing");
         }
 
         miAnimador.SetFloat("VelocidadVertical", velVert);
