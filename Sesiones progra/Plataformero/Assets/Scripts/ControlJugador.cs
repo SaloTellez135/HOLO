@@ -30,6 +30,8 @@ public class ControlJugador : MonoBehaviour
 
         bool movVert = Input.GetButtonDown("Jump");
 
+        bool hit = Input.GetButtonDown("Fire1");
+
         if (movHoriz > 0)
         {//se mueve a la derechaç
             transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -64,6 +66,11 @@ public class ControlJugador : MonoBehaviour
         }
 
         miAnimador.SetFloat("VelocidadVertical", velVert);
+
+        if(hit)
+        {
+            miAnimador.SetTrigger("Golpear");
+        }
     }
 
     void detectarPiso()
