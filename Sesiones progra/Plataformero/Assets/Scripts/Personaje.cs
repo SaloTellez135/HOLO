@@ -12,11 +12,13 @@ public class Personaje : MonoBehaviour
     public GameObject splashBlood;
     public GameObject corazao;
     private Animator animador;
+    private EfectosSonoros misSonidos;
 
     // Start is called before the first frame update
     void Start()
     {
         animador = GetComponent<Animator>();
+        misSonidos = GetComponent<EfectosSonoros>();
     }
 
     // Update is called once per frame
@@ -35,6 +37,7 @@ public class Personaje : MonoBehaviour
             GameObject efectoSlpash = Instantiate(splashBlood);
             efectoSlpash.transform.position = this.transform.position;
             animador.SetTrigger("Daniar");
+            misSonidos.reporducir("Danio");
         }
 
         if (hp < 1)
@@ -44,6 +47,7 @@ public class Personaje : MonoBehaviour
             GameObject splashCorazao = Instantiate(corazao);
             splashCorazao.transform.position = this.transform.position;
             animador.SetTrigger("Morir");
+            misSonidos.reporducir("grito");
 
         }
     }
@@ -54,6 +58,8 @@ public class Personaje : MonoBehaviour
         hp = 0;
         print(name + " murio ahogado");
         animador.SetTrigger("Morir");
+        misSonidos.reporducir("grito");
+        //misSonidos.reporducir("Splash");
     }
 
     
