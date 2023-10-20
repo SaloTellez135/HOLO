@@ -32,7 +32,7 @@ public class Personaje : MonoBehaviour
         if (hp > 0)
         {
             hp = hp - puntDanio;
-            print(name + "recibe daño de " + puntDanio + "por " + villano);
+            print(name + "recibe daño de " + puntDanio + " pt por " + villano);
             Personaje elPerso = this.GetComponent<Personaje>();
             GameObject efectoSlpash = Instantiate(splashBlood);
             efectoSlpash.transform.position = this.transform.position;

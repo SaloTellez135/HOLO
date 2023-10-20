@@ -21,7 +21,7 @@ public class EnemigoChikito : MonoBehaviour
     {
         if (cerca)
         {
-            miCuerpo.velocity = transform.right * -velocidadCaminar;
+           // miCuerpo.velocity = this.transform.right * -velocidadCaminar;
             miAnimador.SetBool("Caminando", true);
         }
         else
@@ -75,7 +75,7 @@ public class EnemigoChikito : MonoBehaviour
             //Con esta instruccion se pbtiene el componente del Personaje Player
             Personaje elPerso = otroObjeto.GetComponent<Personaje>();
             //con esta instruccion se hace 20 de daño y digo quien realizo el daño
-            elPerso.hacerDanio(20, gameObject);
+            elPerso.hacerDanio(15, gameObject);
 
         }
     }

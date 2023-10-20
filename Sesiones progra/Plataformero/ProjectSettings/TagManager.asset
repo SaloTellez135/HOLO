@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FxTemporaire
   - Danio
+  - Mob
   layers:
   - Default
   - TransparentFX
