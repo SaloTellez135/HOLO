@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemigoChikito : MonoBehaviour
+public class EnemigoGlande : MonoBehaviour
 {
     private Rigidbody2D miCuerpo;
     private Animator miAnimador;
@@ -10,7 +10,7 @@ public class EnemigoChikito : MonoBehaviour
     public bool cerca;
     public float velocidadCaminar = 5;
     public int puntosDanio = 15;
-    public float rangoAgro = 3;
+    public float rangoAgro = 4;
 
     // Start is called before the first frame update
     void Start()
@@ -30,13 +30,13 @@ public class EnemigoChikito : MonoBehaviour
         {//heroe dentro del area agro
             //print("Jugador cerca");
             cerca = true;
-            
+
             if (heroeJugador.transform.position.x < this.transform.position.x)
             {
                 transform.rotation = Quaternion.Euler(0, 0, 0);
 
             }
-            else 
+            else
             {
                 transform.rotation = Quaternion.Euler(0, 180, 0);
 
@@ -56,11 +56,17 @@ public class EnemigoChikito : MonoBehaviour
             miCuerpo.velocity = Vector3.zero;
             miAnimador.SetBool("Caminando", false);
         }
+
+        //ataque 
+        if (distanciaHeroe < 2)
+        {
+            miAnimador.SetTrigger("Atacar");
+        }
     }
 
-   
 
-   
+
+
 
     private void OnCollisionEnter2D(Collision2D collision) //Metodo para hacer daño al enemigo
     {
