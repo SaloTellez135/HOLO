@@ -23,6 +23,7 @@ public class EnemigoChikito : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool heroeVivo = heroeJugador.GetComponent<Personaje>().estaVivo();
         Vector3 miPos = this.transform.position;
         Vector3 posHeroe = heroeJugador.transform.position;
         float distanciaHeroe = (miPos - posHeroe).magnitude;
@@ -46,7 +47,8 @@ public class EnemigoChikito : MonoBehaviour
         {
             cerca = false;
         }
-        if (cerca)
+
+        if (cerca && heroeVivo) 
         {
             miCuerpo.velocity = this.transform.right * -velocidadCaminar;
             miAnimador.SetBool("Caminando", true);
@@ -65,7 +67,7 @@ public class EnemigoChikito : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) //Metodo para hacer daño al enemigo
     {
         GameObject otroObjeto = collision.gameObject;
-        if (otroObjeto.tag == "Player")
+        if (otroObjeto.tag == "Player" && heroeJugador.GetComponent<Personaje>().estaVivo())
         {
             //print(name + "detecte colision con " + collision.gameObject);
 

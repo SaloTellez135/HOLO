@@ -23,6 +23,7 @@ public class EnemigoGlande : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool heroeVivo = heroeJugador.GetComponent<Personaje>().estaVivo();
         Vector3 miPos = this.transform.position;
         Vector3 posHeroe = heroeJugador.transform.position;
         float distanciaHeroe = (miPos - posHeroe).magnitude;
@@ -46,7 +47,7 @@ public class EnemigoGlande : MonoBehaviour
         {
             cerca = false;
         }
-        if (cerca)
+        if (cerca && heroeVivo)
         {
             miCuerpo.velocity = this.transform.right * -velocidadCaminar;
             miAnimador.SetBool("Caminando", true);

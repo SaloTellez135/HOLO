@@ -13,6 +13,7 @@ public class Personaje : MonoBehaviour
     public GameObject corazao;
     private Animator animador;
     private EfectosSonoros misSonidos;
+    public bool bloqueado = false;
 
     // Start is called before the first frame update
     void Start()
@@ -27,11 +28,20 @@ public class Personaje : MonoBehaviour
         
     }
 
+    public bool estaVivo()
+    {
+        return hp > 0;
+    }
     public void hacerDanio(int puntDanio, GameObject villano)
     {
-        if (hp > 0)
+        if (this.estaVivo())
         {
             hp = hp - puntDanio;
+            bloqueado = true;
+            // elPerso metodo desbloquear se activara despues de 1.2 segundos
+            Invoke("desbloquear", 1.2f);
+
+
             print(name + "recibe daño de " + puntDanio + " pt por " + villano);
             Personaje elPerso = this.GetComponent<Personaje>();
             GameObject efectoSlpash = Instantiate(splashBlood);
@@ -62,5 +72,9 @@ public class Personaje : MonoBehaviour
         //misSonidos.reporducir("Splash");
     }
 
+    private void desbloquear()
+    {
+        bloqueado = false;
+    }
     
 }

@@ -11,17 +11,24 @@ public class ControlJugador : MonoBehaviour
     public bool enPiso = true;
     int numJumps;
     private EfectosSonoros misSonidos;
+    private Personaje miPersonaje;
     // Start is called before the first frame update
     void Start()
     {
         miCuerpo = GetComponent<Rigidbody2D>();
         miAnimador = GetComponent<Animator>();
         misSonidos = GetComponent<EfectosSonoros>();
+        miPersonaje = GetComponent<Personaje>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(!miPersonaje.estaVivo())
+        {//si estoy muerto, no se ejecuta ninguna de las siguientes acciones
+            return;
+        }
+
         detectarPiso();//lo primero que se hace es verificar que estè en el piso
 
         float velVert = miCuerpo.velocity.y;
@@ -32,13 +39,13 @@ public class ControlJugador : MonoBehaviour
 
         bool hit = Input.GetButtonDown("Fire1");
 
-        if (movHoriz > 0)
+        if (movHoriz > 0 && !miPersonaje.bloqueado)
         {//se mueve a la derechaç
             transform.rotation = Quaternion.Euler(0, 0, 0);
             miCuerpo.velocity = new Vector3(velocidadCaminar, velVert, 0);
             miAnimador.SetBool("Caminando", true);
         }
-        else if (movHoriz < 0)
+        else if (movHoriz < 0 && !miPersonaje.bloqueado)
         {// se mueve a la izquierda
             transform.rotation = Quaternion.Euler(0, 180, 0);
             miCuerpo.velocity = new Vector3(-velocidadCaminar, velVert, 0);
@@ -58,7 +65,7 @@ public class ControlJugador : MonoBehaviour
         {
             numJumps = numJumps - 1;
         }
-        if (movVert && numJumps > 0)
+        if (movVert && numJumps > 0 && !miPersonaje.bloqueado)
         {//se mueve hacia arriba
             
             miCuerpo.AddForce(new Vector2(0,jumpForce), ForceMode2D.Impulse);
@@ -67,7 +74,7 @@ public class ControlJugador : MonoBehaviour
 
         miAnimador.SetFloat("VelocidadVertical", velVert);
 
-        if(hit)
+        if(hit && !miPersonaje.bloqueado)
         {
             miAnimador.SetTrigger("Golpear");
         }
