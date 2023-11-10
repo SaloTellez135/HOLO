@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Personaje : MonoBehaviour
 {
@@ -58,7 +59,7 @@ public class Personaje : MonoBehaviour
             splashCorazao.transform.position = this.transform.position;
             animador.SetTrigger("Morir");
             misSonidos.reporducir("grito");
-
+            
         }
     }
 
@@ -76,5 +77,23 @@ public class Personaje : MonoBehaviour
     {
         bloqueado = false;
     }
-    
+
+    private void reiniciarEscena()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+
+    public bool gameOver()
+    {
+        return (vidas <= 0);
+    }
+
+    public void restarVidas()
+    {
+        if (hp == 0)
+        {
+            vidasMax = vidasMax - 1;
+        }
+    }
 }

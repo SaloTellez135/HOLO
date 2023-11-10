@@ -23,6 +23,7 @@ public class EnemigoChikito : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        bool enemigoVivo = this.GetComponent<Personaje>().estaVivo();
         bool heroeVivo = heroeJugador.GetComponent<Personaje>().estaVivo();
         Vector3 miPos = this.transform.position;
         Vector3 posHeroe = heroeJugador.transform.position;
@@ -48,7 +49,7 @@ public class EnemigoChikito : MonoBehaviour
             cerca = false;
         }
 
-        if (cerca && heroeVivo) 
+        if (cerca && heroeVivo && enemigoVivo) 
         {
             miCuerpo.velocity = this.transform.right * -velocidadCaminar;
             miAnimador.SetBool("Caminando", true);
