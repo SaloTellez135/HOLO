@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tilemaps/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Limbo.unity
+    guid: bbe4615087908a547be2c73105077110
+  - enabled: 0
+    path: Assets/Escena1.unity
+    guid: d04dcbe9260b2154890b6e50d842db3e
   m_configObjects: {}

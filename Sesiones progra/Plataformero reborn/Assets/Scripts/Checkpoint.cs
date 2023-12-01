@@ -4,28 +4,39 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
-    public Vector2 checkpoint;
-    public Transform respawn;
-
-    // Start is called before the first frame update
+    private ReproductorSonidos misSonidos;
+    private GameObject checkpoint;
+    public GameObject reaparecePrefab;
     void Start()
     {
-        
+        misSonidos = GetComponent<ReproductorSonidos>();
+        checkpoint = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-    private void OnTriggerEnter2D(Collider2D entrar)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Vector2 pointupdate;
-        GameObject otro = entrar.gameObject;
-        if (otro.CompareTag("Player"))
+        GameObject otro = collision.gameObject;
+
+
+        if (otro.tag == "Player")
         {
-            //pointupdate == new Vector2(transform.position.x, transform.position.y);
-            //GameController.GetComponent<GameController>().respawnPoint == pointupdate;
+            print("El " + name + " colisiona con " + collision);
+            misSonidos.reproducir("SUCCES");
+            GameManager.x = transform.position.x;
+            GameManager.y = transform.position.y;
+            GetComponent<BoxCollider2D>().enabled = false;
+            GameObject reaparece = Instantiate(reaparecePrefab);
+            reaparece.transform.position = this.transform.position;
+            Destroy(reaparece, 3f);
+
         }
     }
+
+
 }

@@ -70,4 +70,14 @@ public class Personaje : MonoBehaviour
     {
         aturdido= false;
     }
+
+    public void quitarVidas()
+    {
+        vidas--;
+    }
+
+    public void festejo()
+    {
+        miAnimador.SetTrigger("Celebrar");
+    }
 }
