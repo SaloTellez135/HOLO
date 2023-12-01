@@ -4342,6 +4342,7 @@ GameObject:
   - component: {fileID: 347592038}
   - component: {fileID: 347592037}
   - component: {fileID: 347592036}
+  - component: {fileID: 347592039}
   m_Layer: 0
   m_Name: estrella
   m_TagString: Untagged
@@ -4429,6 +4430,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &347592039
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347592035}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 12.000002, y: 12.000002}
+  m_Direction: 0
 --- !u!1 &376387692
 GameObject:
   m_ObjectHideFlags: 0
@@ -61728,11 +61745,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5757604227090448818, guid: c2ca5f097757676408698457cbc05df1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.94
+      value: 84.04
       objectReference: {fileID: 0}
     - target: {fileID: 5757604227090448818, guid: c2ca5f097757676408698457cbc05df1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -113.27
+      value: -106.33
       objectReference: {fileID: 0}
     - target: {fileID: 5757604227090448818, guid: c2ca5f097757676408698457cbc05df1, type: 3}
       propertyPath: m_LocalPosition.z

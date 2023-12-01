@@ -19,9 +19,6 @@ public class CamaraSeguidora : MonoBehaviour
         //le coloco la posicion de la pelota
         //a la camara, excepto en z
         transform.position =
-            new Vector3(
-                cavernicola.position.x,
-                cavernicola.position.y + 2,
-                -1);
+            new Vector3(cavernicola.position.x,cavernicola.position.y + 2,-6);
     }
 }
